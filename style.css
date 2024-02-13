@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Kanit:wght@700&display=swap');
+body{
+    font-family: 'Gloock', serif;
+}
+
+
+/*🥝CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*🥝CSS Variable */
+:root{
+    --navbar-height: 60px;
+}
+
+
+/*🥝Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+}
+
+
+/*🥝Navigation Bar: Logo & Image*/
+#logo{
+    margin: 12px 26px 10px 12px;
+}
+#logo img{
+    height: 48px;
+    border-radius: 12%;
+    margin: 4px 4px;
+}
+
+
+/*🥝Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.2rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: white;
+    font-weight: 900;
+    font-size: 1.3rem;
+    transition: all ease 0.5s;
+}
+
+
+/* 🥝Home Section  */
+#home{
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    padding: 5px 200px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('img/bg4.jpg')no-repeat center center/cover ;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: .91;
+}
+#home h1{
+    background: linear-gradient(to right, white,rgb(240, 157, 3), white ,rgb(240, 157, 3), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 3.2rem;
+}
+#home p{
+    background: linear-gradient(to right, white,rgb(240, 157, 3), white ,rgb(240, 157, 3), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 1.02rem;
+}
+
+
+/*🥝Menu Section */
+.service{
+    display: flex;
+}
+.service .box{
+border: 3px solid rgba(0, 0, 0, 0.263);
+padding: 20px;
+margin: 2px 20px;
+border-radius: 12px;
+background-color: rgba(0, 0, 0, 0.078);
+}
+.service .box:hover {
+    transition: all ease .8s;
+    border: 3px solid rgba(0, 0, 0, 0.342);
+    background-color: rgba(0, 0, 0, 0.219);
+    margin: -1px 10px 10px 1px;
+    cursor: pointer;
+    box-shadow: 10px 13px 10px rgba(52, 53, 53, 0.632);
+}
+.service .box img{
+    width: 150px;
+    margin: auto;
+    display: block;
+}
+
+
+/*🥝Utility Class */
+.btn{
+    padding: 5px 15px;
+    border:2px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 17px;
+    font-size: 1.08rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.h-primary{
+    font-size: 3.4rem;
+    padding:  131px 0px 0px 0px;
+}
+.h-primaryy{
+    font-size: 3.4rem;
+    padding:  10px 0px 10px 0px;
+}
+.secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+
+
+/*🥝Client Section */
+#client-section{
+    position: relative;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('img/bg3.jpg')no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+    margin: 95px 0px;
+}
+#clients img{
+    height: 105px;
+}
+/* #clients img:hover{
+    height: 110px;
+    transition: all ease .5s;
+    cursor: pointer;
+} */
+.client-item{
+    padding: 50px;
+}
+
+
+/*🥝Contact Us */
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('img/cu.jpg')no-repeat center center/cover;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+    margin: 100px 0px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0px 48px 0px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: .3rem;
+    border-radius: 5px;
+    border-style: groove;
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+
+/*🥝Footer */
+footer{
+    background: #000;
+    color: white;
+    padding: 9px 20px;
+}
